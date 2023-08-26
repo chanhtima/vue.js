@@ -1,0 +1,135 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,body{
+  font-size: 16px;
+  background-color: #FFF9F0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700;
+} 
+
+img, svg, video, canvas, audio, iframe, embed, object{
+  max-width: 100%;
+}
+
+#app{
+  position: relative;
+}
+
+.page-image-bg{
+  background-position: bottom center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.section-image-bg{
+  background-position: bottom center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.navbar{
+  min-height: initial;
+  @apply py-0;
+}
+.nav-bar-social{
+  @apply flex items-center space-x-2
+}
+.nav-bar-social a{
+  display: block;
+}
+.nav-bar-social img{
+  @apply w-[20px] md:w-[30px]
+}
+.nav-bar-social-wrapper{
+  visibility: visible;
+  opacity: 1;
+  transition: all .25s;
+  @apply h-[20px] md:h-[30px];
+}
+.nav-bar-social-wrapper.active{
+  height: 0px;
+  visibility: hidden;
+  opacity: 0;
+}
+@screen <lg{
+  .nav-bar-social-wrapper .navbar-end{
+    width: 100%
+  }
+  .nav-bar-social-wrapper .navbar-start{
+    @apply hidden
+  }
+}
+.logo{
+  @apply md:-mt-9 w-[100px] md:w-auto;
+  transition: all .25s;
+}
+.logo.active{
+  margin-top: 0;
+}
+.navbar-main{
+  z-index: 9;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top:0;
+}
+.navbar-main + *{
+  @apply mt-[90px] md:mt-[100px] lg:mt-[110px]
+}
+.navbar-start{
+  @apply lg:w-1/5 2xl:w-1/2
+}
+.navbar-end{
+  @apply lg:w-4/5 2xl:w-1/2
+}
+.map-wrapper iframe{
+  width:100%!important;
+}
+[class*='primary'] p{
+  color: #fff;
+}
+.line-pass{
+
+  position: relative;
+}
+:root{
+  --line-width: calc(50% - 100px)
+}
+@screen xs{
+  :root{
+    --line-width: calc(50% - 120px)
+  }
+}
+@screen xl{
+  :root{
+    --line-width: calc(50% - 160px)
+  }
+}
+.line-pass:after{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  content: '';
+  width: var(--line-width);
+  background-color: black;
+  height: 1px;
+  right: 0;
+}
+.line-pass:before{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  content: '';
+  width: var(--line-width);
+  background-color: black;
+  height: 1px;
+  left: 0;
+}

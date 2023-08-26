@@ -1,0 +1,44 @@
+
+$(document).ready(function () {
+    // init for banner
+    // initDatatable(); // Init dropify remove image event
+  
+    // initDropifyRemoveEvent(); //tab inti
+  
+    if ($('.first_tab').length > 0) {
+      $(".first_tab").champ();
+    }
+  });
+  
+  setSave = function setSave() {
+    event.preventDefault();
+    tinyMCE.triggerSave();
+    var frm_data = new FormData($('#about_frm')[0]);
+    $.ajax({
+      url: "/admin/about/save",
+      type: "POST",
+      contentType: false,
+      data: frm_data,
+      processData: false,
+      headers: {
+        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+      },
+      beforeSend: function beforeSend(xhr) {
+        if ($("#about_frm").valid()) {
+          return $("#about_frm").valid();
+        } else {
+          mwz_noti('error', resp.msg);
+          return $("#about_frm").valid();
+        }
+      },
+      success: function success(resp) {
+        if (resp.success) {
+          mwz_noti('success', resp.msg);
+          window.location.href = '/admin/about/';
+        } else {
+          mwz_noti('error', resp.msg);
+          document.getElementById(resp.focus).focus();
+        }
+      }
+    });
+  };

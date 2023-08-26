@@ -1,0 +1,17 @@
+.co-text-editor{
+    *{
+        word-break: break-word;
+    }
+    table,img{
+        max-width: 100%;
+        height: auto;
+    }
+    ul{
+        padding-left: 25px;
+        list-style-type: disc;
+    }
+    Ol{
+        padding-left: 25px;
+        list-style-type: decimal;
+    }
+}

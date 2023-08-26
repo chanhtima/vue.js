@@ -1,0 +1,5 @@
+.co-card-01{
+    &-tag{
+        @apply absolute left-3 top-3 bg-black text-white bg-opacity-50 z-[2] px-3 py-1 rounded-lg text-sm;
+    }
+}

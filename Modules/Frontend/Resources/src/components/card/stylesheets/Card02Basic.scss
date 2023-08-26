@@ -1,0 +1,23 @@
+.co-card-02{
+    &-img{
+        a{
+            @apply block rounded-xl overflow-hidden aspect-w-1 aspect-h-1;
+        }
+        img{
+            @apply object-cover;
+        }
+    }
+    &-detail{
+        @apply bg-white -mt-12 rounded-2xl relative z-[1] px-4 py-3 text-center mr-4 ml-4 shadow-md;
+    }
+    &-title{
+        @apply font-medium text-18 lg:text-22 line-clamp-2;
+    }
+    &-subtitle{
+        @apply line-clamp-2
+    }
+    &-action{
+        @apply underline font-medium mt-4
+    }
+}
+

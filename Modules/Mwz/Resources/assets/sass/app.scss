@@ -1,0 +1,91 @@
+label.required:after{
+	content: "*";
+	color: red;
+}
+
+/*upload image*/
+.image-upload {
+    border: 2px dashed #d4d8dd;
+    border-radius: 5px;
+    width: 100%;
+    position: relative;
+    padding: 1.5rem;
+    cursor: pointer;
+    border-radius: 0.3125rem;
+}
+
+.input-upload {
+    display: none;
+}
+
+.label-upload {
+    width: 100%;
+}
+
+.dz-message {
+    width: 100%;
+    text-align: center;
+    margin: 0 !important;
+}
+
+.img-upload {
+    max-height: 200px;
+    max-width: 100%;
+    position: relative;
+}
+
+.btn-upload {
+    position: absolute;
+    top: 11px;
+    right: 11px;
+    z-index: 100;
+    background: #fff;
+}
+
+.display-none {
+    display: none !important;
+}
+
+.display-block {
+    display: block !important;
+}
+
+.d-upload-image {
+    padding: 25px;
+}
+
+.d-upload-image .ion-upload {
+    font-size: 60px;
+}
+
+.list-unstyled li {
+    border-bottom: 0;
+}
+/*.upload image*/
+
+.dropzone.dz-started .dz-message{
+    display: inline-block !important;
+    position: relative;
+    vertical-align: top;
+    margin: 16px;
+    min-height: 40px;
+}
+.dropzone{
+    border: 1px dotted rgba(107, 122, 144, 0.3) !important;
+    border-radius: 5px;
+    min-height: 150px;
+    width: 100%;
+    position: relative;
+}
+
+.dropzone .dz-preview .dz-image{
+    border-radius: 20px;
+    overflow: hidden;
+    width: 120px;
+    height: 120px;
+    position: relative;
+    display: block;
+    z-index: 10;
+    margin-left: auto;
+    margin-right: auto;
+}

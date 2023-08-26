@@ -1,0 +1,8 @@
+.co-card-01{
+    &-date{
+        @apply absolute left-0 top-1 bg-black rounded-xl px-2 py-1 bg-opacity-50 text-white text-13 flex items-center;
+        + .co-card-01-title{
+            @apply pt-10;
+        }
+    }
+}

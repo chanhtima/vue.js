@@ -1,0 +1,39 @@
+.co-card-01{
+    @apply relative;
+    &-img{
+        a{
+            @apply block rounded-xl overflow-hidden aspect-w-1 aspect-h-1;
+        }
+        img{
+            @apply object-cover;
+        }
+    }
+    &-detail{ 
+        @apply absolute bottom-3 left-3 right-3 rounded-lg bg-white px-4 py-2 bg-opacity-60;
+        a{
+            @apply flex items-center justify-between relative;
+        }
+    } 
+    &-title{
+        @apply font-normal text-16 line-clamp-2;
+        + img{
+            @apply w-[20px]
+        }
+    }
+    &-dark{
+        .co-card-01{
+            &-detail{
+                @apply bg-black bg-opacity-60 text-white;
+                .co-card-01-date-icon{
+                    @apply w-[15px] mr-2;
+                }
+                img:not(.co-card-01-date-icon){
+                    filter: invert(1) brightness(100);
+                }
+            }
+            &-date{
+                @apply bg-white text-black;
+            }
+        }
+    }
+}

@@ -1,0 +1,28 @@
+.co-card-01-hoz{
+    @apply flex items-center flex-wrap;
+    &-img{
+        @apply w-full lg:w-1/2 xl:w-2/5;
+    }
+    &-img-wrapper{
+        @apply aspect-w-2 sm:aspect-w-3 aspect-h-2 lg:aspect-h-1 lg:aspect-w-1;
+        img{
+            @apply object-cover rounded-2xl
+        }
+    }
+    &-detail{
+        @apply w-full lg:w-1/2 xl:w-3/5 p-4 lg:pl-10 xl:pl-16
+    }
+    &-date{
+        @apply text-gray-400 flex items-center space-x-2 mb-1 lg:mb-0;
+        img{
+            @apply mb-[2px] opacity-50 w-[15px]
+        }
+    }
+    &-title{
+        @apply text-26 md:text-32 lg:text-40 font-medium mb-2 lg:mb-4;
+        line-height: 1.15;
+    }
+    &-subtitle{
+        @apply line-clamp-6;
+    }
+}

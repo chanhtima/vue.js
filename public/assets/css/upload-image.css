@@ -1,0 +1,58 @@
+
+.image-upload {
+    border: 2px dashed #d4d8dd;
+    border-radius: 5px;
+    width: 100%;
+    position: relative;
+    padding: 1.5rem;
+    cursor: pointer;
+    border-radius: 0.3125rem;
+}
+
+.input-upload {
+    display: none;
+}
+
+.label-upload {
+    width: 100%;
+}
+
+.dz-message {
+    width: 100%;
+    text-align: center;
+    margin: 0 !important;
+}
+
+.img-upload {
+    max-height: 200px;
+    max-width: 100%;
+    position: relative;
+}
+
+.btn-upload {
+    position: absolute;
+    top: 11px;
+    right: 11px;
+    z-index: 100;
+    background: #fff;
+}
+
+.display-none {
+    display: none !important;
+}
+
+.display-block {
+    display: block !important;
+}
+
+.d-upload-image {
+    padding: 25px;
+}
+
+.d-upload-image .ion-upload {
+    font-size: 60px;
+}
+
+.list-unstyled li {
+    border-bottom: 0;
+}

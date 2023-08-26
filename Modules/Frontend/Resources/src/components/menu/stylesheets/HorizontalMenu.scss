@@ -1,0 +1,6 @@
+.co-horizontal-menu{
+    @apply flex items-center space-x-6 mx-4 py-4;
+    a{
+        @apply text-white text-20 font-light hover:text-primary transition-all leading-6 whitespace-nowrap block;
+    }
+}

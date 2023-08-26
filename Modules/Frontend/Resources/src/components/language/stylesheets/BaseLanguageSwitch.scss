@@ -1,0 +1,6 @@
+.co-base-language-switch{
+    @apply flex items-center space-x-2 text-white text-14 md:text-16;
+    .active{
+        @apply font-bold opacity-25 pointer-events-none;
+    }
+}

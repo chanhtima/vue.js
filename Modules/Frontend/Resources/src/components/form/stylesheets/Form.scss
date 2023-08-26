@@ -1,0 +1,17 @@
+.co-form{
+    &-wrapper{
+        @apply flex flex-col;
+    }
+    &-label{
+        @apply mb-1
+    }
+    &-style{
+        @apply
+        p-2 rounded-md transition-all 
+        bg-white bg-opacity-60 
+        border border-gray-300 outline-none
+        hover:border-gray-300 hover:border-opacity-70
+        focus:border-gray-300 focus:border-opacity-70
+        focus-within:border-gray-300 focus-within:border-opacity-70;
+    }
+}

@@ -1,0 +1,32 @@
+.co-base-pagination {
+    @apply flex flex-wrap justify-center items-center;
+    li {
+        @apply mx-1 rounded-full;
+      a {
+        @apply flex flex-wrap justify-center items-center border border-gray-700 rounded-full;
+        text-decoration: none;
+        min-width: 38px; 
+        min-height: 38px;
+        transition: all .25s;
+      }
+      &:not([class*="current"]) a:hover {
+        @apply bg-primary border-transparent text-white;
+      }
+      &.co-pagination-basic-current a {
+        color: rgba(255, 255, 255, 1);
+        cursor: default;
+        pointer-events: none;
+        @apply bg-primary;
+      }
+  
+      &:first-child, &:last-child {
+        @apply bg-transparent;
+      }
+      @screen <md{
+          @apply mx-2;
+          &:not(.co-pagination-basic-current):not(:first-child):not(:last-child){
+              @apply hidden
+          }
+      }
+    } 
+  }

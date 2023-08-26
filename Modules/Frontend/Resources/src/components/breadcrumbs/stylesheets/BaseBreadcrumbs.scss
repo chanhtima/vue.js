@@ -1,0 +1,16 @@
+.co-base-breadcrumbs{
+    @apply flex items-center justify-center space-x-6;
+    li a{
+        @apply flex items-center font-medium;
+    }
+    li:not(:first-child){
+        @apply relative;
+        &:before{
+            @apply absolute top-1/2 -translate-y-1/2 -left-4;
+            content: '/';
+        }
+    }
+    &-icon{
+        @apply w-[23px] pb-[2px] mr-1;
+    }
+}

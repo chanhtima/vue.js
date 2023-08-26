@@ -1,0 +1,9 @@
+.co-hamberger-menu{
+    @apply static lg:relative -mr-3 lg:mr-0;
+    &-button{
+        @apply btn btn-link lg:hidden;
+    }
+    &-list{
+        @apply mt-3 z-[1] p-2 shadow bg-[#fffdfd] rounded-b-lg w-full left-0 transition-all visible opacity-100 lg:invisible lg:opacity-0;
+    }
+}

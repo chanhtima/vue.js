@@ -1,0 +1,5 @@
+// BaseButton
+.co-base-button{
+    @extend .co-base-button;
+    @apply lg:pb-1 btn-primary text-white;
+}
